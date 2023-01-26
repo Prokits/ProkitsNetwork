@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600&display=swap");
+@font-face {
+  font-family: "Helvetica";
+  src: url(./fonts/Helvetica-Bold.ttf) format("truetype");
+  src: url(./fonts/Helvetica.ttf) format("truetype");
+}
+.qna, .section, .hero_section {
+  margin: 2rem 0;
+  padding: 0 1rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #f9f8f8;
+  padding: 0.8em;
+}
+nav img {
+  width: 8rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8em;
+  font-family: "Unbounded", cursive;
+}
+nav ul li {
+  list-style: none;
+}
+
+footer {
+  background-color: #f9f8f8;
+}
+footer div div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  gap: 1em;
+  padding: 1em;
+}
+footer div .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer div ul {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  gap: 0.5em;
+  padding: 1em;
+}
+footer div ul li {
+  list-style: none;
+}
+footer .heading {
+  font-family: "Unbounded", cursive;
+  color: #ff3864;
+  font-size: 1.4rem;
+}
+footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  font-size: 0.8em;
+  padding: 1em;
+}
+
+.hero_section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.hero_section .branding {
+  color: #261447;
+  font-family: "Unbounded", cursive;
+  font-weight: 600;
+  font-size: 2em;
+  line-height: 92.5%;
+  margin-bottom: 0.5rem;
+  max-width: 15ch;
+}
+.hero_section .subheading {
+  color: #087ca7;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero_section button {
+  padding: 0.5rem 1rem;
+  border-radius: 1000px;
+  border: none;
+  background-color: #ff3864;
+  font-family: "Unbounded", cursive;
+  font-weight: 400;
+  color: #f9f8f8;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  font-weight: 700;
+  line-height: 106%;
+  color: #22181c;
+}
+.qna {
+  display: grid;
+}
+.qna h2 {
+  font-family: "Unbounded", cursive;
+  color: #261447;
+  margin-bottom: 1rem;
+}
+.qna h2 span {
+  color: #ff3864;
+}
+.qna div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  line-height: 106%;
+}
+.qna div img {
+  max-width: 40%;
+}/*# sourceMappingURL=Style.css.map */

@@ -1,0 +1,16 @@
+:root {
+  --background: #f3eeee;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Helvetica", sans-serif;
+  background-color: var(--background);
+}
