@@ -14,3 +14,10 @@ body {
   font-family: "Helvetica", sans-serif;
   background-color: var(--background);
 }
+
+a:link,
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}

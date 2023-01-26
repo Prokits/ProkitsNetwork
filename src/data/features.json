@@ -1,0 +1,22 @@
+{
+  "features": [
+    {
+      "title": "No Censorships",
+      "text": "We believe in open internet and net neutrality. We don’t block any websites or services on our network.",
+      "image": "door.png",
+      "image_alt": "a cartoon of girl opening a door"
+    },
+    {
+      "title": "High Speed",
+      "text": "Currently at this scale, We offer a maximum of 100mpbs (Fast Ethernet) from our data centers.",
+      "image": "download.png",
+      "image_alt": "a cartoon of man downloading something on his laptop"
+    },
+    {
+      "title": "Priority Service",
+      "text": "We value our customers the most, we have early morning support (4AM to 10PM, all 365 Days of year).",
+      "image": "partnership.png",
+      "image_alt": "two men shaking hands"
+    }
+  ]
+}

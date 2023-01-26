@@ -1,4 +1,3 @@
-import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Button from "./components/Button";
 
@@ -7,11 +6,11 @@ import HeroImg from "./images/illustrations/heroImage.png";
 import OfficeImg from "./images/illustrations/office.png";
 import MessageImg from "./images/illustrations/message.png";
 
+const link = "https://paytm.me/VaM-WQR";
+
 function Homepage() {
   return (
     <>
-      <Nav />
-
       <article className="hero_section">
         <section className="div-center">
           <div>
@@ -76,6 +75,9 @@ function Homepage() {
             </p>
           </div>
         </section>
+        <div className="div-center">
+          <Button className="payment-btn" link={link} text="Pay Bill" />
+        </div>
       </div>
       <Footer />
     </>
