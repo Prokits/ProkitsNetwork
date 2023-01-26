@@ -41,12 +41,24 @@ $font-body: "Helvetica", sans-serif;
   font-weight: 700;
 }
 
+.div-center {
+  @include flex;
+  gap: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 // Nav
 nav {
   @include flex($justify: space-between);
   flex-flow: row wrap;
   background-color: $white;
   padding: 0.8em;
+  max-width: 1500px;
+  margin: 0 auto;
 
   img {
     width: 8rem;
@@ -113,9 +125,20 @@ footer {
 
 // Homepage
 .hero_section {
-  @include grid(2);
+  @include flex;
   @extend %standard-marginPad;
-  gap: 2rem;
+
+  flex-flow: row wrap;
+  gap: 10%;
+
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  section {
+    margin-bottom: 2em;
+  }
 
   .branding {
     color: $heading-color;
@@ -123,7 +146,7 @@ footer {
     font-weight: 600;
     font-size: 2em;
     line-height: 92.5%;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     max-width: 15ch;
   }
 
@@ -142,41 +165,72 @@ footer {
     font-weight: 400;
     color: $white;
   }
+
+  margin-bottom: 2em;
 }
 
 .section {
-  @include grid(2);
+  @include flex($justify: space-between, $align: center);
+  flex-flow: row wrap;
   @extend %standard-marginPad;
 
-  gap: 2rem;
+  gap: 10%;
   font-weight: 700;
   line-height: 106%;
   color: $text-color;
+
+  div {
+    max-width: 60ch;
+    margin: 0 auto;
+    padding-bottom: 1em;
+  }
+
   img {
+    width: 100%;
+    max-width: 400px;
   }
 }
 
 .qna {
   @extend %standard-marginPad;
-  display: grid;
 
   h2 {
     font-family: $font-title;
     color: $heading-color;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
 
     span {
       color: $highlight;
     }
   }
 
-  div {
+  div:first-of-type {
     @include grid(2);
     gap: 1em;
     line-height: 106%;
 
-    img {
-      max-width: 40%;
+    p {
+      margin: 0 auto;
+      max-width: 50ch;
     }
   }
+
+  div {
+    @include flex;
+    padding: 1em;
+    gap: 2em;
+
+    img {
+      width: 100%;
+      max-width: 200px;
+    }
+
+    p {
+      max-width: 60ch;
+    }
+  }
+}
+
+@media (max-width) {
 }

@@ -13,6 +13,18 @@
   font-weight: 700;
 }
 
+.div-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -20,6 +32,8 @@ nav {
   flex-flow: row wrap;
   background-color: #f9f8f8;
   padding: 0.8em;
+  max-width: 1500px;
+  margin: 0 auto;
 }
 nav img {
   width: 8rem;
@@ -78,9 +92,19 @@ footer .copyright {
 }
 
 .hero_section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 10%;
+  margin-bottom: 2em;
+}
+.hero_section img {
+  width: 100%;
+  max-width: 400px;
+}
+.hero_section section {
+  margin-bottom: 2em;
 }
 .hero_section .branding {
   color: #261447;
@@ -88,7 +112,7 @@ footer .copyright {
   font-weight: 600;
   font-size: 2em;
   line-height: 92.5%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   max-width: 15ch;
 }
 .hero_section .subheading {
@@ -107,30 +131,55 @@ footer .copyright {
 }
 
 .section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 10%;
   font-weight: 700;
   line-height: 106%;
   color: #22181c;
 }
-.qna {
-  display: grid;
+.section div {
+  max-width: 60ch;
+  margin: 0 auto;
+  padding-bottom: 1em;
 }
+.section img {
+  width: 100%;
+  max-width: 400px;
+}
+
 .qna h2 {
   font-family: "Unbounded", cursive;
   color: #261447;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 .qna h2 span {
   color: #ff3864;
 }
-.qna div {
+.qna div:first-of-type {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
   line-height: 106%;
 }
+.qna div:first-of-type p {
+  margin: 0 auto;
+  max-width: 50ch;
+}
+.qna div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  gap: 2em;
+}
 .qna div img {
-  max-width: 40%;
+  width: 100%;
+  max-width: 200px;
+}
+.qna div p {
+  max-width: 60ch;
 }/*# sourceMappingURL=Style.css.map */
