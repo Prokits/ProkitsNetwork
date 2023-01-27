@@ -23,7 +23,7 @@ function Homepage() {
                 service.
               </p>
             </div>
-            <Button text="Register Now" />
+            <Button className="btn-main" text="Register Now" />
           </div>
         </section>
         <img src={HeroImg} alt="Two people talking to each other" />
@@ -79,7 +79,6 @@ function Homepage() {
           <Button className="payment-btn" link={link} text="Pay Bill" />
         </div>
       </div>
-      <Footer />
     </>
   );
 }

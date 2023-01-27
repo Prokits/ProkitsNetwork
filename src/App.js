@@ -4,6 +4,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Homepage from "./Homepage";
 import About from "./About";
 import Biling from "./Biling";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/biling" element={<Biling />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
