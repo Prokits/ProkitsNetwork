@@ -1,10 +1,15 @@
 import logo from "../images/logo/ProkitsLogo.png";
+import Homepage from "../Homepage";
+import About from "../About";
+import Biling from "../Biling";
+
+import { Routes, Route, Link } from "react-router-dom";
 
 function Footer(props) {
   return (
     <footer>
-      <div>
-        <div>
+      <div className="main-footer">
+        <div className="branding">
           <img src={logo} alt="Prokits Logo" />
           <p className="bold heading">
             Infrastructure for the connected world.
@@ -12,15 +17,39 @@ function Footer(props) {
         </div>
         <div className="nav">
           <ul>
-            <li className="bold">Home</li>
-            <li>About</li>
-            <li>Pricing</li>
-            <li>Biling</li>
+            <li className="bold">
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="nav-link">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="nav-link">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link to="/biling" className="nav-link">
+                Biling
+              </Link>
+            </li>
           </ul>
           <ul>
-            <li className="bold">tushgaurav</li>
+            <li className="bold">
+              <a href="beta.tushgaurav.in" className="nav-link">
+                tushgaurav
+              </a>
+            </li>
             <li>Suggestions</li>
-            <li>Speedtest</li>
+            <li>
+              <a href="www.speedtest.net" className="nav-link">
+                Speedtest
+              </a>
+            </li>
             <li>Usage</li>
           </ul>
         </div>
@@ -29,6 +58,12 @@ function Footer(props) {
         <p>&copy; Prokits Digital Services 2023 - All Rights Reserved</p>
         <p>Your IP: {props.ip}</p>
       </div>
+
+      {/* <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/biling" element={<Biling />} />
+      </Routes> */}
     </footer>
   );
 }

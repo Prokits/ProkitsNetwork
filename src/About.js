@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import Card from "./components/Card";
 import Footer from "./components/Footer";
 import data from "./data/features.json";
 
 function About() {
+  useEffect(() => {
+    document.title = "About | Prokits Networks";
+  }, []);
+
   const cardItems = data.features.map((card) => {
     const cardTitle = card.title;
     const cardText = card.text;
@@ -72,7 +77,6 @@ function About() {
           <div className="card_container">{cardItems}</div>
         </article>
       </div>
-      <Footer />
     </>
   );
 }

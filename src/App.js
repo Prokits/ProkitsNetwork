@@ -29,6 +29,7 @@ function App() {
           </li>
         </ul>
       </nav>
+
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<About />} />
