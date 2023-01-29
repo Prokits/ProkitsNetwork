@@ -46,6 +46,11 @@ $font-body: "Helvetica", sans-serif;
   gap: 2rem;
 }
 
+.row {
+  flex-direction: row;
+  text-align: center;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -133,6 +138,7 @@ footer {
 .card {
   @include flex($justify: space-between);
   max-width: 600px;
+  gap: 1em;
   background-color: $subheading;
   border-radius: 10px;
   padding: 2em;
@@ -141,6 +147,8 @@ footer {
     h1 {
       color: $white;
       margin-bottom: 1em;
+      padding: 0.5em 0;
+      text-align: left;
     }
 
     p {
@@ -154,6 +162,10 @@ footer {
     width: 40%;
     max-width: 300px;
   }
+}
+
+.card:last-of-type {
+  margin-bottom: 3em;
 }
 
 .card_container {
@@ -280,13 +292,15 @@ footer {
 }
 
 .payment-btn {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.2rem;
   border-radius: 1000px;
   border: none;
   background-color: $highlight;
+  font-size: 1.2em;
   font-family: $font-title;
   font-weight: 400;
   color: $white;
+  margin-bottom: 1em;
 }
 
 // About Page
@@ -379,23 +393,26 @@ footer {
         color: $highlight;
         font-size: 1.1rem;
       }
+    }
 
-      .copyright {
-      }
+    .copyright {
+      flex-direction: column;
+      gap: 0.5em;
+      padding: 1em 0;
+    }
 
-      .nav {
-        @include flex;
-        margin-top: 1em;
-      }
-      ul {
-        @include flex;
-        gap: 0.3em;
-        flex-flow: column wrap;
-        padding-bottom: 1em;
+    .nav {
+      @include flex;
+      margin-top: 1em;
+    }
+    ul {
+      @include flex;
+      gap: 0.3em;
+      flex-flow: column wrap;
+      padding-bottom: 1em;
 
-        li {
-          list-style: none;
-        }
+      li {
+        list-style: none;
       }
     }
   }

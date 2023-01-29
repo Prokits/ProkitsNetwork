@@ -1,4 +1,3 @@
-import Footer from "./components/Footer";
 import Button from "./components/Button";
 
 // Images
@@ -75,7 +74,12 @@ function Homepage() {
             </p>
           </div>
         </section>
-        <div className="div-center">
+        <div className="div-center, row">
+          <h1>Pay Bills</h1>
+          <p>
+            You can pay your bills by clicking on the button below, it will open
+            Paytm app (if installed) or you can login on the web portal.
+          </p>
           <Button className="payment-btn" link={link} text="Pay Bill" />
         </div>
       </div>

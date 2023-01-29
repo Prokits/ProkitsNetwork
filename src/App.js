@@ -1,12 +1,22 @@
 import "./Style.css";
 import logo from "./images/logo/ProkitsLogo.png";
-import { Routes, Route, Link } from "react-router-dom";
 import Homepage from "./Homepage";
 import About from "./About";
 import Biling from "./Biling";
 import Footer from "./components/Footer";
 
+import { Routes, Route, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+
 function App() {
+  const [ipInfo, setIpInfo] = useState({});
+
+  useEffect(() => {
+    fetch("https://ipinfo.io/json")
+      .then((response) => response.json())
+      .then((data) => setIpInfo(data));
+  }, []);
+
   return (
     <div className="App">
       <nav>
@@ -35,7 +45,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/biling" element={<Biling />} />
       </Routes>
-      <Footer />
+      <Footer ip={ipInfo.ip} />
     </div>
   );
 }

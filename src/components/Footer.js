@@ -40,13 +40,13 @@ function Footer(props) {
           </ul>
           <ul>
             <li className="bold">
-              <a href="beta.tushgaurav.in" className="nav-link">
+              <a href="https://beta.tushgaurav.in" className="nav-link">
                 tushgaurav
               </a>
             </li>
             <li>Suggestions</li>
             <li>
-              <a href="www.speedtest.net" className="nav-link">
+              <a href="https://www.speedtest.net" className="nav-link">
                 Speedtest
               </a>
             </li>
