@@ -76,7 +76,7 @@ function Homepage() {
         </section>
         <div className="div-center, row">
           <h1>Pay Bills</h1>
-          <p>
+          <p className="left-align">
             You can pay your bills by clicking on the button below, it will open
             Paytm app (if installed) or you can login on the web portal.
           </p>
